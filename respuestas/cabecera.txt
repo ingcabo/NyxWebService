@@ -1,0 +1,1 @@
+application/json*/*deflate, gzipno-cache[{"id_producto":3960,"descripcion_producto":"Baked Blush","cantidad_producto":1,"costo_producto":"13500","total_lote":"13500","img":"BBL.jpg"}]www.nyxvzla.com{"nombres":"carlos333","email":"caslos@hotmail.com","telefono":"2313","doc_identidad":"342432","datos_env":"dfdsfds","monto_total":"13500"}

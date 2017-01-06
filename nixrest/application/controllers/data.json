@@ -1,0 +1,54 @@
+{
+	"compra": [{
+		"id": "3024",
+		"nombre": "Epic Black Mousse Liner",
+		"cantidad": "3",
+		"costo": "53700",
+		"totallote": "637700",
+		"img": "268.jpg"
+	}, {
+		"id": "3596",
+		"nombre": "INTENSE BUTTER GLOSS",
+		"cantidad": "11",
+		"costo": "126500",
+		"totallote": "637700",
+		"img": "289_1_.jpg"
+	}, {
+		"id": "3960",
+		"nombre": "Baked Blush",
+		"cantidad": "5",
+		"costo": "67500",
+		"totallote": "637700",
+		"img": "BBL.jpg"
+	}, {
+		"id": "2983",
+		"nombre": "BUTT NAKED - TURN THE OTHER CHEEK",
+		"cantidad": "4",
+		"costo": "159200",
+		"totallote": "637700",
+		"img": "171.jpg"
+	}, {
+		"id": "868",
+		"nombre": "Nude On Nude Palette",
+		"cantidad": "4",
+		"costo": "159200",
+		"totallote": "637700",
+		"img": "S119-main2.jpg"
+	}, {
+		"id": "1096",
+		"nombre": "Super Skinny Eye Marker - Carbon Black",
+		"cantidad": "4",
+		"costo": "71600",
+		"totallote": "637700",
+		"img": "0132.jpg"
+	}],
+
+	"lote": {
+		"monto_total": "99999",
+		"nombres": "carlos ramirez",
+		"email": "1carlosdavid@gmail.com",
+		"telefono": "123415121",
+		"doc_identidad": "v-15839590",
+		"datos_env": "dffdadfasdfsdfsdfdsfdsfdsf"
+	}
+}
