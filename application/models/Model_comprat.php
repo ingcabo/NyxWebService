@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class Model_comprat extends My_model{
 
@@ -17,14 +17,11 @@ protected $before_update = array('update_timestamp');
 //al consultar la data no deberiamos mostrar la contraseña
 protected function remove_sensite_data($dat){
 
-				
-					unset($dat['password']);
-			
 
-					
-					
+					unset($dat['password']);
+
 					return($dat);
-					
+
 }
 
 
@@ -58,7 +55,7 @@ return $dat;
 }
 
 
-	
+
 
 public function consulta_usuario($key){
 
@@ -89,16 +86,16 @@ public function ult_track($loteid){
 
      public function llave_user($key){
 
-                           
+
                           if ($this->config->item('rest_enable_keys') == true) {
 
                            $query =  $this->db->query('SELECT user_id, level FROM  keys_app WHERE key_id ="'.$key.'"  AND STATUS = "active" LIMIT 1');
 
-                             
-                            
+
+
                              $result =   $query->row_array();
 
-                            
+
                           }else{
 
 

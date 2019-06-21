@@ -325,7 +325,7 @@ $config['rest_keys_table'] = 'keys_app';
 */
 //$config['rest_enable_keys'] = true;
 
-$config['rest_enable_keys'] = false;
+$config['rest_enable_keys'] = true;
 
 
 /*
@@ -416,7 +416,7 @@ DELIMITER ;
 
 */
 //segundo en los cuales caduca la key
-$config['rest_time_keys_expire'] = 300;
+$config['rest_time_keys_expire'] = 30;
 /*
 |--------------------------------------------------------------------------
 | REST Enable Logging

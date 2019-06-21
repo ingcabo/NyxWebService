@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //http://10.0.28.100 http://nyxvzla.com
-$config['base_url'] = "http://127.0.0.1/";
+$config['base_url'] = "http://127.0.0.1/NyxWebService/";
 
 /*
 |--------------------------------------------------------------------------

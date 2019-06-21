@@ -175,13 +175,16 @@ class MY_Model extends CI_Model
     {
         $where = func_get_args();
 
+        //print_r($where);
 
         $this->_set_where($where);
 
         $this->db->order_by("1", "desc");
-        
+
+
+
         return $this->get_all();
-				
+
 		    }
 
     /**
@@ -256,9 +259,9 @@ class MY_Model extends CI_Model
 
       public function insert_many_desa($datos)
     {
-        
-           
-            $this->db->insert_batch($this->_table, $datos); 
+
+
+            $this->db->insert_batch($this->_table, $datos);
             $value = $this->db->affected_rows();
 
             return $value;
@@ -919,7 +922,7 @@ class MY_Model extends CI_Model
                     }
                 }
             }
-        } 
+        }
         else if (count($params) == 1)
         {
             $this->_database->where($params[0]);
@@ -928,7 +931,7 @@ class MY_Model extends CI_Model
 		{
             if (is_array($params[1]))
             {
-                $this->_database->where_in($params[0], $params[1]);    
+                $this->_database->where_in($params[0], $params[1]);
             }
             else
             {
@@ -943,7 +946,7 @@ class MY_Model extends CI_Model
         {
             if (is_array($params[1]))
             {
-                $this->_database->where_in($params[0], $params[1]);    
+                $this->_database->where_in($params[0], $params[1]);
             }
             else
             {
@@ -960,11 +963,11 @@ class MY_Model extends CI_Model
         $method = ($multi) ? 'result' : 'row';
         return $this->_temporary_return_type == 'array' ? $method . '_array' : $method;
     }
-	
+
 
         public function sp($k){
 
-                        $query    = $this->db->query("CALL verifica_times_key ('".$k."')");           
+                        $query    = $this->db->query("CALL verifica_times_key ('".$k."')");
                         $segundos = $query->row('seg');
                         return   $segundos;
 
@@ -974,17 +977,17 @@ class MY_Model extends CI_Model
 /*
         function verifica_metodo_update_exist($control,$funcion,$metodo,$id){
 
-         
 
-               $query    = $this->db->query("SELECT count(*) as count FROM metodos WHERE controller = /".$control" and FUNCTION =".$funcion." and metodo = ".$metodo. " and id <> ".$id. " and status= 'active' ");           
+
+               $query    = $this->db->query("SELECT count(*) as count FROM metodos WHERE controller = /".$control" and FUNCTION =".$funcion." and metodo = ".$metodo. " and id <> ".$id. " and status= 'active' ");
                         $cant = $query->row('count');
-                        return   $cant;   
-         
+                        return   $cant;
+
 
 
 
         }*/
-	
-	 
-	
+
+
+
 }
